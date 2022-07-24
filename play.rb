@@ -28,6 +28,7 @@ def computer_crack_code(master)
 end
 
 puts 'You have 12 tries to crack the code'
+puts 'each code is 4 characters long and goes from 1 to 6'
 puts 'each try gives you a hint of the code'
 puts "\n\n* Red means right number, right position"
 puts '* White means right number wrong position'
@@ -48,3 +49,5 @@ if master.code.cracked?(guess)
 else
   puts 'Better luck next time!'
 end
+
+puts "The code was #{master.code.value}"
